@@ -112,4 +112,23 @@ public class Transaction {
     public void setPaymentMethod(String paymentMethod) {
         this.paymentMethod = paymentMethod;
     }
+
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "transactionId='" + transactionId + '\'' +
+                ", productId='" + productId + '\'' +
+                ", productName='" + productName + '\'' +
+                ", productCategory='" + productCategory + '\'' +
+                ", productPrice=" + productPrice +
+                ", productQuantity=" + productQuantity +
+                ", productBrand='" + productBrand + '\'' +
+                ", totalAmount=" + totalAmount +
+                ", currency='" + currency + '\'' +
+                ", customerId='" + customerId + '\'' +
+                ", transactionDate=" + transactionDate +
+                ", paymentMethod='" + paymentMethod + '\'' +
+                '}';
+    }
 }
